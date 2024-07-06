@@ -26,7 +26,13 @@ const View = () => {
           rows.map((row) => (
             <Grid item xs={12} sm={6} md={4} key={row.id}>
               <Card style={{background:'darkseagreen', borderRadius:"15px"}} sx={{ minWidth: 275, marginBottom: 2 }}>
-                
+                 <CardMedia
+                  component="img"
+                  height="600"
+                  image={row.image}
+                  alt={row.title}
+                /> 
+
                 <CardContent>
                   
                   <Typography sx={{ mb: 1.5 }} color="text.secondary">
